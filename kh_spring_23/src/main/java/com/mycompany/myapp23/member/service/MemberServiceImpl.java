@@ -13,7 +13,7 @@ public class MemberServiceImpl implements MemberService {
 	public MemberDao mDao;
 	
 	@Override
-	public void insertmember(Member m) {
-		mDao.insertMember(m);
+	public int signUp(Member m)throws Exception {
+		return mDao.signUp(m);
 	}
 }

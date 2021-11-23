@@ -13,9 +13,9 @@
 		<property name="url"
 			value="jdbc:oracle:thin:@localhost:1521:xe" />
 
-		<property name="username" value="scott" />
+		<property name="username" value="ncsUser" />
 
-		<property name="password" value="TIGER" />
+		<property name="password" value="ncsUser" />
 
 		<property name="defaultAutoCommit" value="false" />
 

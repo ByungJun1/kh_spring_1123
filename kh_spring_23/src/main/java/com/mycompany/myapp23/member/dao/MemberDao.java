@@ -10,10 +10,11 @@ import com.mycompany.myapp23.member.vo.Member;
 @Repository("memberDao")
 public class MemberDao {
 	@Autowired
-	private SqlSession sqlSession;
+	private SqlSession sqlSessionTemplate;
 	
-	public void insertMember(Member m) {
+	public int signUp(Member m)throws Exception {
 		System.out.println("m: "+m);
-		sqlSession.insert("Member.signUp", m);
+		return sqlSessionTemplate.insert("MemberMapper.signUp", m);
 	}
 }
+
